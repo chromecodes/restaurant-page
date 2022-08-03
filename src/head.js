@@ -1,6 +1,6 @@
  export const createHead = () => {
 
-    const main =  document.getElementById("main");
+
 
     const header = document.createElement("div");
     header.classList.add("header");
@@ -40,5 +40,5 @@
 
     header.appendChild(nav);
 
-    main.appendChild(header);
+   main.appendChild(header);
  }
