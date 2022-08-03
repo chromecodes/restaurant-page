@@ -1,8 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Medula+One&family=Zhi+Mang+Xing&display=swap");
 .header {
-  height: 100px;
-  width: 100%;
+  padding: 0 30px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.568);
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .name {
-  color: red;
+  padding-left: 90px;
+  color: brown;
+  font-family: "Zhi Mang Xing", cursive;
+}
+.nav button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav {
+  padding-right: 140px;
+  display: flex;
+  gap: 60px;
+  font-family: "Medula One", cursive;
+  font-size: 24px;
+}
+
+.home,
+.menu,
+.reservation,
+.contact {
+  letter-spacing: 0.7px;
 }
