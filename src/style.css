@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Medula+One&family=Zhi+Mang+Xing&display=swap");
+#main {
+  height: 100vh;
+  width: 100%;
+}
 .header {
+  width: 95.3%;
   padding: 0 30px;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.568);
+  background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
 }
 .name {
   padding-left: 90px;
@@ -32,4 +38,21 @@
 .reservation,
 .contact {
   letter-spacing: 0.7px;
+}
+
+.contant {
+  display: flex;
+  height: 100%;
+  gap: 40px;
+}
+.left {
+  background-color: white;
+  width: 50%;
+}
+.right {
+  width: 50%;
+  display: flex;
+}
+.img {
+  width: 40%;
 }
