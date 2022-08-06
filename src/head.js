@@ -14,25 +14,25 @@
     const nav = document.createElement('div');
     nav.classList.add("nav");
 
-    const home = document.createElement('div');
+    const home = document.createElement('button');
     home.classList.add("home");
     home.textContent = "Home";
 
     nav.appendChild(home);
 
-    const menu = document.createElement('div');
+    const menu = document.createElement('button');
     menu.classList.add("menu");
     menu.textContent = "menu";
 
     nav.appendChild(menu);
 
-    const reservation = document.createElement('div');
+    const reservation = document.createElement('button');
     reservation.classList.add("reservation");
     reservation.textContent = "reservation";
 
     nav.appendChild(reservation)
 
-    const contact = document.createElement('div');
+    const contact = document.createElement('button');
     contact.classList.add("contact");
     contact.textContent = "contact";
 
