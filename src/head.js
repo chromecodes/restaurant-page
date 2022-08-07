@@ -17,12 +17,14 @@ export const createHead = () => {
 
         const home = document.createElement('button');
         home.classList.add("home");
+        home.classList.add('active-clr')
         home.textContent = "Home";
     
       homeCnt.appendChild(home);
 
         const span1 = document.createElement('div');
-        span1.classList.add("active-span1");
+        span1.classList.add("span1");
+        span1.classList.add('active')
 
         homeCnt.appendChild(span1);
 
@@ -39,7 +41,7 @@ export const createHead = () => {
       menuCnt.appendChild(menu);
 
         const span2 = document.createElement('div');
-        span2.classList.add("active-span2");
+        span2.classList.add("span2");
 
       menuCnt.appendChild(span2);
 
@@ -55,7 +57,7 @@ export const createHead = () => {
       reservationCnt.appendChild(reservation);
 
         const span3 = document.createElement('div');
-        span3.classList.add("active-span3");
+        span3.classList.add("span3");
 
       reservationCnt.appendChild(span3);
 
@@ -72,7 +74,7 @@ export const createHead = () => {
       contactCnt.appendChild(contact);
 
         const span4 = document.createElement('div');
-        span4.classList.add("active-span4");
+        span4.classList.add("span4");
 
       contactCnt.appendChild(span4);
 

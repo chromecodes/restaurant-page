@@ -4,7 +4,7 @@
 :root {
   --primary-background: #ffffff;
   --primary-backgroung-trans: rgba(255, 255, 255, 0.6);
-  --primary-accent: #fdb900;
+  --primary-accent: #fdce00;
   --primary-color: #000000;
   --secondary-color: #a1a1aa;
 }
@@ -48,6 +48,15 @@
   gap: 50px;
   font-family: "Nunito", sans-serif;
 }
+.homeCnt,
+.menuCnt,
+.reservationCnt,
+.contactCnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .home,
 .menu,
@@ -56,6 +65,11 @@
   font-size: 17px;
   font-weight: 600;
 }
+
+.active-clr {
+  color: var(--primary-accent);
+}
+
 .home:hover,
 .menu:hover,
 .reservation:hover,
@@ -64,13 +78,24 @@
   color: var(--primary-accent);
   text-shadow: 1px 1px 5px var(--primary-color);
 }
-.active-span4 {
+.span1,
+.span2,
+.span3,
+.span4 {
   content: " ";
-  width: 24px;
-  height: 6px;
+  width: 35px;
+  height: 3px;
+  border-radius: 10px;
   background-color: var(--primary-accent);
+  transition: 2s ease-in-out;
+  display: none;
 }
-
+.span3 {
+  width: 60px;
+}
+.active {
+  display: block;
+}
 .contant {
   display: flex;
   height: 100%;
@@ -235,11 +260,11 @@ input[type="radio"] {
 .home-icons {
   width: 100%;
   height: 120px;
-  display: flex;
-  gap: 20px;
   font-size: 22px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .home-icon-1::before {

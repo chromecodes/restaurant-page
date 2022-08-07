@@ -8,3 +8,6 @@ import { createHomePage} from "./home.js";
 
 createHead();
 createHomePage();
+
+const home = document.querySelector(".home");
+console.log(home);
