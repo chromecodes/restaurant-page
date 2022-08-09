@@ -64,6 +64,7 @@ export const createHomePage = () => {
         radio1.setAttribute("type", "radio");
         radio1.setAttribute("name", "radio-btn");
         radio1.setAttribute("id", "radio1");
+        radio1.checked = true;
 
       right.appendChild(radio1);
 
@@ -214,4 +215,19 @@ export const createHomePage = () => {
     contant.appendChild(right);
 
   main.appendChild(contant);
+
+  let radios = [radio1, radio2, radio3, radio4, radio5, radio6, radio7]
+
+  console.log(radios);
+  
+
+    let i = 1;
+    setInterval(() => {
+      if(i === 7){
+        i = 0;
+      }
+      radios[i].checked = true;
+      i++;
+    }, 6000);
 };
+
