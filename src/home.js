@@ -1,7 +1,7 @@
 export const createHomePage = () => {
   const main = document.getElementById("main");
 
-    const contant = document.createElement("contant");
+    const contant = document.createElement("div");
     contant.classList.add("contant");
 
       const left = document.createElement("div");
@@ -103,12 +103,12 @@ export const createHomePage = () => {
 
       right.appendChild(radio6);
 
-        const radio7 = document.createElement("input");
-        radio7.setAttribute("type", "radio");
-        radio7.setAttribute("name", "radio-btn");
-        radio7.setAttribute("id", "radio7");
+      //   const radio7 = document.createElement("input");
+      //   radio7.setAttribute("type", "radio");
+      //   radio7.setAttribute("name", "radio-btn");
+      //   radio7.setAttribute("id", "radio7");
 
-      right.appendChild(radio7);
+      // right.appendChild(radio7);
 
         const slider = document.createElement("div");
         slider.classList.add("slider");
@@ -155,12 +155,12 @@ export const createHomePage = () => {
 
         slider.appendChild(label6);
 
-          const label7 = document.createElement("label");
-          label7.setAttribute("for", "radio7");
-          label7.setAttribute("class", "slider-btn");
-          label7.setAttribute("id", "radio-7");
+          // const label7 = document.createElement("label");
+          // label7.setAttribute("for", "radio7");
+          // label7.setAttribute("class", "slider-btn");
+          // label7.setAttribute("id", "radio-7");
 
-        slider.appendChild(label7);
+        // slider.appendChild(label7);
 
       right.appendChild(slider);
 
@@ -204,11 +204,11 @@ export const createHomePage = () => {
 
         imgs.appendChild(picture6);
 
-          const picture7 = document.createElement("img");
-          picture7.classList.add("pic");
-          picture7.setAttribute("src", "../src/img/p7.png");
+        //   const picture7 = document.createElement("img");
+        //   picture7.classList.add("pic");
+        //   picture7.setAttribute("src", "../src/img/p7.png");
 
-        imgs.appendChild(picture7);
+        // imgs.appendChild(picture7);
 
       right.appendChild(imgs);
 
@@ -216,18 +216,18 @@ export const createHomePage = () => {
 
   main.appendChild(contant);
 
-  let radios = [radio1, radio2, radio3, radio4, radio5, radio6, radio7]
+  // let radios = [radio1, radio2, radio3, radio4, radio5, radio6, radio7]
 
-  console.log(radios);
+  // console.log(radios);
   
 
-    let i = 1;
-    setInterval(() => {
-      if(i === 7){
-        i = 0;
-      }
-      radios[i].checked = true;
-      i++;
-    }, 6000);
+  //   let i = 1;
+  //   setInterval(() => {
+  //     if(i === 6){
+  //       i = 0;
+  //     }
+  //     radios[i].checked = true;
+  //     i++;
+  //   }, 6000);
 };
 

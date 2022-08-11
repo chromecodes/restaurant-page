@@ -13,9 +13,13 @@
   height: 100vh;
   width: 100%;
 }
+p {
+  margin: 0;
+}
+/****** HEADER SECTION *******/
 
 .header {
-  width: 95.3%;
+  width: 95.25%;
   padding: 0 30px;
   height: 60px;
   background-color: var(--primary-backgroung-trans);
@@ -96,6 +100,9 @@
 .active {
   display: block;
 }
+
+/******* CONTENT SECTION - HOME PAGE******/
+
 .contant {
   display: flex;
   height: 100%;
@@ -123,7 +130,7 @@
 
 .pic {
   width: 100%;
-  height: 100%;
+  height: 120%;
   transition: 3s;
 }
 
@@ -300,3 +307,73 @@ input[type="radio"] {
   color: var(--primary-accent);
   text-shadow: 1px 1px 5px var(--primary-color);
 }
+
+/***** MENU PAGE *****/
+
+.menu-container {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 15px 0;
+  color: var(--primary-accent);
+  text-shadow: 0 0 3px var(--primary-color);
+}
+.menu-intro {
+  font-family: "Quicksand", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 1px var(--primary-accent);
+}
+.menu-page {
+  width: 80%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 40px 80px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 380px));
+  grid-template-rows: auto;
+}
+.menuLine-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: var(--primary-accent);
+  text-shadow: 0 0 1px var(--primary-color);
+}
+.menuLines-wrap {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+
+.menuLines-wrap hr {
+  margin: 13px 4px 0px 4px;
+  flex-grow: 2;
+}
+
+.menuLine-3 {
+  font-family: "Quicksand", sans-serif;
+  margin: 5px 0 5px 10px;
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+/*
+font-family: 'Medula One', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Saira', sans-serif;
+*/
