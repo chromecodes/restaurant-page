@@ -1,17 +1,15 @@
 const menuBook = {
     Ramen : [
-        "Ramen",
-        {
-        name : "Ichiraku Miso Pork Ramen",
-        price: "$15",
-        content: "Contains Pork Slices, Narutomaki, Eggs."
+        "Ramen", 
+        { 
+            name : "Ichiraku Miso Pork Ramen", 
+            price: "$15", 
+            content: "Contains Pork Slices, Narutomaki, Eggs."
         },
-
-        {
-            name : "Ichiraku Miso Chicken Ramen",
-            price: "$15",
-            content: "Contains Chicken Slices, Narutomaki, Eggs."
-        },
+        { 
+            name : "Ichiraku Miso Chicken Ramen", 
+            price: "$15", 
+            content: "Contains Chicken Slices, Narutomaki, Eggs."},
         
         {
             name : "Ichiraku Veg Ramen",
@@ -155,15 +153,7 @@ export const createMenu = () => {
                 menu.appendChild(createMenu(menuBook.Cakes));
 
                 menu.appendChild(createMenu(menuBook.Desserts));
-                menu.appendChild(createMenu(menuBook.Drinks));
-                
-
-                    
-
-
-
-                        
-
+                menu.appendChild(createMenu(menuBook.Drinks));                     
 
             menuContainer.appendChild(menu);
 

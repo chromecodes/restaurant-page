@@ -7,11 +7,13 @@ import './style.css';
 import { createHead } from "./head.js";
 import { createHomePage} from "./home.js";
 import { createMenu} from "./menu.js";
-
+import { createReservation} from "./reservation";
 
 createHead();
 
-createMenu();
+createReservation()
+
+// createMenu();
 
 // createHomePage();
 
