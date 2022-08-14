@@ -8,10 +8,14 @@ import { createHead } from "./head.js";
 import { createHomePage} from "./home.js";
 import { createMenu} from "./menu.js";
 import { createReservation} from "./reservation";
+import { createAbout} from "./about";
+
 
 createHead();
 
-createReservation()
+createAbout();
+
+// createReservation()
 
 // createMenu();
 

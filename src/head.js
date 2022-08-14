@@ -64,21 +64,21 @@ export const createHead = () => {
     nav.appendChild(reservationCnt);
    
 
-      const contactCnt = document.createElement('div');
-      contactCnt.classList.add("contactCnt");
+      const aboutCnt = document.createElement('div');
+      aboutCnt.classList.add("aboutCnt");
 
-        const contact = document.createElement('button');
-        contact.classList.add("contact");
-        contact.textContent = "contact";
+        const about = document.createElement('button');
+        about.classList.add("about");
+        about.textContent = "About";
 
-      contactCnt.appendChild(contact);
+      aboutCnt.appendChild(about);
 
         const span4 = document.createElement('div');
         span4.classList.add("span4");
 
-      contactCnt.appendChild(span4);
+      aboutCnt.appendChild(span4);
 
-    nav.appendChild(contactCnt);
+    nav.appendChild(aboutCnt);
   
   header.appendChild(nav);
 

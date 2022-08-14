@@ -58,7 +58,9 @@ export const createReservation = () => {
                                 const lastName = document.createElement("input");
                                 lastName.setAttribute("type", "text");
                                 lastName.setAttribute("name", "lastName");
-                                lastName.setAttribute("id", "lastName"); 
+                                lastName.setAttribute("id", "lastName");       
+                                lastName.setAttribute("required", ""); 
+
 
                             lastNameLbl.appendChild(lastName);
                         lastNameCtnr.appendChild(lastNameLbl);
@@ -78,6 +80,8 @@ export const createReservation = () => {
                                 noofPersons.setAttribute("name", "persons");
                                 noofPersons.setAttribute("id", "noofPersons"); 
                                 noofPersons.setAttribute("pattern", "[1-8]{1}"); 
+                                noofPersons.setAttribute("required", ""); 
+
 
                             noofPersonsLbl.appendChild(noofPersons);
                         noofPersonsCtnr.appendChild(noofPersonsLbl);
@@ -96,6 +100,8 @@ export const createReservation = () => {
                                 phoneNum.setAttribute("type", "number");
                                 phoneNum.setAttribute("name", "phoneNum");
                                 phoneNum.setAttribute("id", "phoneNum"); 
+                                phoneNum.setAttribute("required", ""); 
+
 
                             phoneNumLbl.appendChild(phoneNum);
                         phoneNumCtnr.appendChild(phoneNumLbl);
