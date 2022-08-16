@@ -471,6 +471,7 @@ input[type="radio"] {
   flex-direction: column;
   gap: 45px;
   box-shadow: 7px 0 10px -3px rgb(76, 76, 76);
+  z-index: 1;
 }
 .story-Cnt,
 .cheif-Cnt {
@@ -527,12 +528,121 @@ input[type="radio"] {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .about-set3 {
+  width: 850px;
   grid-area: set3;
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
+.time-cnt {
+  width: 180px;
+}
+.address-cnt {
+  width: 180px;
+}
+.news-cnt {
+  width: 250px;
+}
+.time-til {
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+.about-span3 {
+  z-index: 0;
+  margin: 2px -30px 10px;
+  content: " ";
+  width: 180px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: var(--primary-accent);
+}
+.day {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  padding: 5px;
+  font-weight: 600;
+}
+.time {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  padding-left: 7px;
+  font-weight: 400;
+}
+.time::before {
+  content: "- ";
+}
+.news-til {
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+.email-cnt {
+  padding: 2px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.email {
+  border: 2px solid var(--primary-accent);
+  font-family: "Quicksand", sans-serif;
+  padding-left: 5px;
+  font-size: 18px;
+  width: 150px;
+  border-radius: 5px 0 0 5px;
+}
+.email:focus {
+  outline: none;
+}
+.email-btn {
+  border: none;
+  background-color: var(--primary-accent);
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0 5px 5px 0;
+}
+.email-btn:hover {
+  color: var(--primary-accent);
+  background-color: var(--primary-color);
+}
+.email-btn:hover ~ .email {
+  border: 2px solid var(--primary-color);
+}
+
 .about-foot {
   grid-area: foot;
   box-shadow: 0px -7px 10px -3px rgb(76, 76, 76);
 }
+
+ul#menu li a:hover {
+  background: #36a668;
+}
+#menu li:hover > a {
+  background: #51c786;
+}
+.address-til {
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+.about-span4 {
+  margin: 2px 0 10px 15px;
+  content: " ";
+  width: 195px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: var(--primary-accent);
+}
+.address {
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  padding-left: 7px;
+  padding-bottom: 10px;
+}
+
 /*
 font-family: 'Medula One', cursive;
 font-family: 'Nunito', sans-serif;
