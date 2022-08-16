@@ -156,12 +156,12 @@ let tempText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, d
                   newsLetterEmailCnt.classList.add("email-cnt");
 
                     const newsLetterEmailBtn = document.createElement('button');
-                    newsLetterEmailBtn.classList.add("email-btn");
+                    newsLetterEmailBtn.classList.add("about-email-btn");
                     newsLetterEmailBtn.textContent = "Subcribe";
                   newsLetterEmailCnt.appendChild(newsLetterEmailBtn);
 
                     const newsLetterEmail = document.createElement('input');
-                    newsLetterEmail.classList.add("email");
+                    newsLetterEmail.classList.add("about-email");
                     newsLetterEmail.setAttribute("placeholder", "E-mail");
                     newsLetterEmail.setAttribute("required", ""); 
                   newsLetterEmailCnt.appendChild(newsLetterEmail);

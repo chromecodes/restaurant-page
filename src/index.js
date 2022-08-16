@@ -12,14 +12,7 @@ import { createAbout} from "./about";
 
 
 createHead();
-
-createAbout();
-
-// createReservation()
-
-// createMenu();
-
-// createHomePage();
+createHomePage();
 
 const main = document.getElementById("main");
 const home = document.querySelector(".home");
@@ -28,7 +21,7 @@ const menu = document.querySelector(".menu");
 const span2 = document.querySelector(".span2");
 const reservation = document.querySelector(".reservation");
 const span3 = document.querySelector(".span3");
-const contact = document.querySelector(".contact");
+const about = document.querySelector(".about");
 const span4 = document.querySelector(".span4");
 
 function clearClass() {
@@ -39,7 +32,7 @@ function clearClass() {
     span2.classList.remove("active")
     reservation.classList.remove("active-clr");
     span3.classList.remove("active")
-    contact.classList.remove("active-clr");
+    about.classList.remove("active-clr");
     span4.classList.remove("active")
 }
 home.addEventListener("click", ()=>{
@@ -56,5 +49,18 @@ menu.addEventListener("click", ()=>{
     span2.classList.add("active");
     createMenu();
 })
-
+reservation.addEventListener("click", ()=>{
+    main.removeChild(main.querySelector(".contant"));  
+    clearClass();
+    reservation.classList.add("active-clr");
+    span3.classList.add("active");
+    createReservation();
+})
+about.addEventListener("click", ()=>{
+    main.removeChild(main.querySelector(".contant"));  
+    clearClass();
+    about.classList.add("active-clr");
+    span4.classList.add("active");
+    createAbout();
+})
 
