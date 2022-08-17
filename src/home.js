@@ -216,18 +216,15 @@ export const createHomePage = () => {
 
   main.appendChild(contant);
 
-  // let radios = [radio1, radio2, radio3, radio4, radio5, radio6, radio7]
+  let radios = [radio1, radio2, radio3, radio4, radio5, radio6 ]; 
 
-  // console.log(radios);
-  
-
-  //   let i = 1;
-  //   setInterval(() => {
-  //     if(i === 6){
-  //       i = 0;
-  //     }
-  //     radios[i].checked = true;
-  //     i++;
-  //   }, 6000);
+    let i = 1;
+    setInterval(() => {
+      if(i === radios.length){
+        i = 0;
+      }
+      radios[i].checked = true;
+      i++;
+    }, 6000);
 };
 
