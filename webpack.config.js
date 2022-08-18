@@ -17,6 +17,18 @@ module.exports = {
          {
             test: /\.(png|svg|jpg|jpeg|gif)$/i,
             type: 'asset/resource',
+            generator: {
+              filename: 'imgs/[name][ext]',
+ 
+            }
+            // test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            // type: 'file-loader',
+            // options: {
+            //   name: '[name].[ext]',
+            //   publicPath : '../imgs',
+            //   outputPath : '/imgs'
+            // }
+
           },
         ]
     },

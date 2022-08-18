@@ -1,5 +1,9 @@
-console.log("hiii");
-console.log(1);
+import '../src/imgs/p1.png';
+import '../src/imgs/p2.png';
+import '../src/imgs/p3.png';
+import '../src/imgs/p4.png';
+import '../src/imgs/p5.png';
+import '../src/imgs/p6.png';
 
 import './normalize.css';
 import './style.css';
@@ -9,7 +13,6 @@ import { createHomePage} from "./home.js";
 import { createMenu} from "./menu.js";
 import { createReservation} from "./reservation";
 import { createAbout} from "./about";
-
 
 createHead();
 createHomePage();
@@ -27,13 +30,13 @@ const span4 = document.querySelector(".span4");
 function clearClass() {
     console.log(2);
     home.classList.remove("active-clr");
-    span1.classList.remove("active")
+    span1.classList.remove("active");
     menu.classList.remove("active-clr");
-    span2.classList.remove("active")
+    span2.classList.remove("active");
     reservation.classList.remove("active-clr");
-    span3.classList.remove("active")
+    span3.classList.remove("active");
     about.classList.remove("active-clr");
-    span4.classList.remove("active")
+    span4.classList.remove("active");
 }
 home.addEventListener("click", ()=>{
     main.removeChild(main.querySelector(".contant"));  
