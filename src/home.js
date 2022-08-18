@@ -170,37 +170,37 @@ export const createHomePage = () => {
           const picture1 = document.createElement("img");
           picture1.classList.add("pic");
           picture1.classList.add("first");
-          picture1.setAttribute("src", "../src/imgs/p1.png");
+          picture1.setAttribute("src", "imgs/p1.png");
 
         imgs.appendChild(picture1);
 
           const picture2 = document.createElement("img");
           picture2.classList.add("pic");
-          picture2.setAttribute("src", "../src/imgs/p2.png");
+          picture2.setAttribute("src", "imgs/p2.png");
 
         imgs.appendChild(picture2);
 
           const picture3 = document.createElement("img");
           picture3.classList.add("pic");
-          picture3.setAttribute("src", "../src/imgs/p3.png");
+          picture3.setAttribute("src", "imgs/p3.png");
 
         imgs.appendChild(picture3);
 
           const picture4 = document.createElement("img");
           picture4.classList.add("pic");
-          picture4.setAttribute("src", "../src/imgs/p4.png");
+          picture4.setAttribute("src", "imgs/p4.png");
 
         imgs.appendChild(picture4);
 
           const picture5 = document.createElement("img");
           picture5.classList.add("pic");
-          picture5.setAttribute("src", "../src/imgs/p5.png");
+          picture5.setAttribute("src", "imgs/p5.png");
 
         imgs.appendChild(picture5);
 
           const picture6 = document.createElement("img");
           picture6.classList.add("pic");
-          picture6.setAttribute("src", "../src/imgs/p6.png");
+          picture6.setAttribute("src", "imgs/p6.png");
 
         imgs.appendChild(picture6);
 
