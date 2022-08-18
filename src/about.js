@@ -93,7 +93,6 @@ let tempText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, d
 
             aboutCnt.appendChild(aboutSet2);
 
-            
               const aboutSet3 = document.createElement("div");
               aboutSet3.classList.add("about-set3");
 
